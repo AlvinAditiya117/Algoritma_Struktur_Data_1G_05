@@ -14,6 +14,7 @@ public class Buku05 {
         this.stok = stok;
         harga = har;
     }
+    
     String judul,pengarang;
     int halaman,stok,harga;
 
