@@ -3,9 +3,7 @@
  */
 public class Buku05 {
 
-    public Buku05(){
- 
-    }
+
 
     public Buku05(String jud, String pg,int hal,int stok,int har) {
         judul = jud;
@@ -14,7 +12,7 @@ public class Buku05 {
         this.stok = stok;
         harga = har;
     }
-    
+
     String judul,pengarang;
     int halaman,stok,harga;
 
