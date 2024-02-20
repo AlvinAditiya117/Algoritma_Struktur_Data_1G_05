@@ -12,5 +12,6 @@ public class BukuMain05 {
     bk1.terjual(5);
     bk1.gantiHarga(60000);
     bk1.tampillkanInformasi();
+
     }
 }
