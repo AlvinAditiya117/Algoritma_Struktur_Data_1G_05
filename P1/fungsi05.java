@@ -1,6 +1,6 @@
 package Algoritma_Struktur_Data_1G_05;
 import java.util.Scanner;
-public class Fungsi4 {
+public class fungsi05 {
     
     private static final int NUM_BRANCHES = 4;
     private static final String[] BRANCH_NAMES = {"RoyalGarden 1", "RoyalGarden 2", "RoyalGarden 3", "RoyalGarden 4"};

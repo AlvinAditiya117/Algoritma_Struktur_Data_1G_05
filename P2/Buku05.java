@@ -60,7 +60,7 @@ public class Buku05 {
     }
 double hitungHargaTotal(){
     hargaBayar = hargaTotal - hargaDiskon;
-    return hargaBayar;
+    return hargaBayar;-
 }
     
 }

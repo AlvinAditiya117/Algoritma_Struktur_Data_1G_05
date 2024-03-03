@@ -1,6 +1,6 @@
 package Algoritma_Struktur_Data_1G_05;
 import java.util.Scanner;
-public class Pemilihan1 {
+public class pemilihan05 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int tugas, kuis, uts, uas;

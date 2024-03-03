@@ -21,5 +21,7 @@ public class BukuMain05 {
     Buku05 bukuAlvin = new Buku05("Indah Pada Waktunya","Alvin",179,31,60000);
     bukuAlvin.terjual(11);
     bukuAlvin.tampillkanInformasi();
+
+    
     }
 }

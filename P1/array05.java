@@ -1,6 +1,6 @@
 package Algoritma_Struktur_Data_1G_05;
 import java.util.Scanner;
-public class Array3 {
+public class array05 {
     public static void main(String[] args) {
         String[] subjects = { "Pancasila", 
                               "Konsep Teknologi Informasi", 

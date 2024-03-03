@@ -1,6 +1,6 @@
 package Algoritma_Struktur_Data_1G_05;
 import java.util.Scanner;
-public class Perulangan2 {
+public class perulangan05 {
    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
