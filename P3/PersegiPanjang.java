@@ -9,7 +9,7 @@ public static void main(String[]args) {
 
     Scanner sc05 = new Scanner(System.in);
 
-    PersegiPanjang[] ppArray = new PersegiPanjang[9];
+    PersegiPanjang[] ppArray = new PersegiPanjang[0];
 
     for (int i = 0; i < ppArray.length; i++) {
         
