@@ -4,20 +4,29 @@ public class MainSum05 {
     public static void main(String[] args) {
         Scanner sc05 = new Scanner(System.in);
         System.out.println("----------------------------------------------------------");
-        System.out.println("program menghitung keuntungan total (satuan juta misal 5.5)");
-        System.out.print("masukkan jumlah bulan : ");
+        System.out.println("Program menghitung keuntungan total perusahaan (satuan juta misal 5.5)");
+        System.out.print("Masukkan jumlah perusahaan : ");
         int elm = sc05.nextInt();
 
-        Sum05 sm = new Sum05(elm);
         System.out.println("-------------------------------------");
-        for (int i = 0; i < sm.elemen; i++) {
-            System.out.print("masukkan untung bulan ke - "+(i+1)+" = ");
-            sm.keuntungan[i] = sc05.nextDouble();
+        Sum05[] sm = new Sum05[elm];
+
+        for (int i = 0; i < elm; i++) {
+            System.out.print("Masukkan jumlah bulan untuk perusahaan ke-" + (i + 1) + ": ");
+            int bln = sc05.nextInt();
+            double[] profits = new double[bln];
+            for (int j = 0; j < bln; j++) {
+                System.out.print("Masukkan keuntungan bulan ke-" + (j + 1) + " (dalam juta): ");
+                profits[j] = sc05.nextDouble();
+            }
+            sm[i] = new Sum05(profits);
+            System.out.println();
         }
-        System.out.println("-------------------------------------");
-        System.out.println("ALGORITMA BRUTE FORCE");
-        System.out.println("total keuntungan perusahaan selama "+sm.elemen+" bulan adalah = "+sm.totalBF(sm.keuntungan));
-        System.out.println("ALGORITMA DIVIDE CONQUER");
-        System.out.println("total keuntungan perusahaan selama "+sm.elemen+" bulan adalah = "+sm.totalDC(sm.keuntungan,0,sm.elemen-1));
+
+        for (int i = 0; i < elm; i++) {
+            System.out.println("Perusahaan ke-" + (i + 1));
+            System.out.println("Total keuntungan: " + sm[i].getTotal());
+            System.out.println();
+        }
     }
 }
