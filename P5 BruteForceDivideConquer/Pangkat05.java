@@ -16,7 +16,7 @@ public class Pangkat05 {
         if (n==1) {
             return a;
         } else {
-            if (n%2==0) {
+            if (n%2==1) {
                 return(pangkatDC(a,n/2)*pangkatDC(a,n/2)*a);
             }else{
                 return(pangkatBF(a,n/2)*pangkatDC(a,n/2));
