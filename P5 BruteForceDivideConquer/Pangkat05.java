@@ -14,7 +14,7 @@ public class Pangkat05 {
     }
     int pangkatDC(int a,int n){
         if (n==1) {
-            return 1;
+            return a;
         } else {
             if (n%2==0) {
                 return(pangkatDC(a,n/2)*pangkatDC(a,n/2)*a);
