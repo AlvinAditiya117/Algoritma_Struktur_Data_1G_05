@@ -8,11 +8,11 @@ public class MainFaktotial05 {
     int iJml = sc05.nextInt();
     
 
-    Faktorial05[] fk = new Faktorial05[10];
+    Faktorial05[] fk = new Faktorial05[iJml];
     for (int i = 0; i < iJml; i++) {
         fk[i] = new Faktorial05();
         System.out.print("masukkan nilai data ke-"+(i+1)+(" : "));
-        int iNilai = sc05.nextInt();
+        fk[i].nilai = sc05.nextInt();
     }
     System.out.println("HASIL - BRUTE FORCE");
     for (int i = 0; i < iJml; i++) {
