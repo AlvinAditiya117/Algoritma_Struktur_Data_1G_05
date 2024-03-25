@@ -8,12 +8,12 @@ public class MainPanngkat05 {
         int elemen = sc05.nextInt();
 
         Pangkat05[] png = new Pangkat05[elemen];
-        for (int i = 0; i < elemen; i++) {
-            png[i] = new Pangkat05();
+        for (int i = 0; i < elemen; i++) {           
             System.out.print("masukkan nilai yang hendak dipangkat : ");
-            png[i].nilai = sc05.nextInt();
+            int nilai = sc05.nextInt();
             System.out.print("masukkan nilai pemangkat : ");
-            png[i].pangkat = sc05.nextInt();
+            int pangkat = sc05.nextInt();
+            png[i] = new Pangkat05(nilai, pangkat);
         }
             System.out.println("HASIL PANGKAT - BRUTE FORCE");
             for (int i = 0; i < elemen; i++) {
