@@ -23,6 +23,10 @@ public class MainMahasiswa05 {
         System.out.println("data mahasiswa setelah sorting asc berdasarkan ipk");
         list.selectionSort();
         list.tampil();
+
+        System.out.println("data mahasiswa setelah sorting asc berdasarkan ipk");
+        list.insertionSort();
+        list.tampil();
     }
 }
 
