@@ -21,3 +21,4 @@ public class MainMahasiswa05 {
         list.tampil();
     }
 }
+

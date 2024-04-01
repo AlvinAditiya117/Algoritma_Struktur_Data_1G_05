@@ -16,3 +16,4 @@ public class Mahasiswa05 {
         System.out.println("Ipk         = "+ipk);
     }
 }
+
