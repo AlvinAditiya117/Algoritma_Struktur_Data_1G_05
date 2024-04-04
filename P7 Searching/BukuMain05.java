@@ -10,34 +10,34 @@ public class BukuMain05 {
     System.out.println("------------------------------------------------------");
     System.out.println("masukkan data bku secara urut dari kodebuku terkecil : ");
     for (int i = 0; i < jumBuku; i++) {
-        System.out.println("------------------------");
-        System.out.println("kode buku \t:");
+        System.out.println("------------------------------------------------------");
+        System.out.print("kode buku \t:  ");
         int kodeBuku = s.nextInt();
-        System.out.println("jumlah buku \t: ");
+        System.out.print("jumlah buku \t: ");
         String judulBuku = s1.nextLine();
-        System.out.println("tahun terbit \t: ");
+        System.out.print("tahun terbit \t: ");
         int tahunTerbit = s.nextInt();
-        System.out.println("pengarang \t: ");
+        System.out.print("pengarang \t: ");
         String pengarang = s1.nextLine();
-        System.out.println("stock \t: ");
+        System.out.print("stock \t: ");
         int stock = s.nextInt();
 
         Buku05 m = new Buku05(kodeBuku, judulBuku, tahunTerbit, pengarang, stock);
         data.tambah(m);
     }
-    System.out.println("---------------------------------------------------");
+    System.out.println("------------------------------------------------------");
     System.out.println("data keseluruhan mahasiswa");
-    System.out.println("------------------------------------------------");
+    System.out.println("------------------------------------------------------");
     System.out.println("data keseluruhan buku");
     data.tampil();
-    System.out.println("___________________________________________________");
-    System.out.println("___________________________________________________");
-    System.out.println("pencarian data : ");
-    System.out.println("masukkan kode buku yang dicai : ");
-    System.out.println("kode buku : ");
+    System.out.println("______________________________________________________");
+    System.out.println("______________________________________________________");
+    System.out.println("pencarian data");
+    System.out.println("masukkan kode buku yang dicari");
+    System.out.print("kode buku : ");
     int cari = s.nextInt();
     System.out.println("menggunakan sequatial serach");
     int posisi = data.FindSeqSearch(cari);
-    data.TampilPosisi(cari, posisi);
+    data.TampilPosisi(cari ,posisi );
     }
 }

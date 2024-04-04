@@ -13,7 +13,7 @@ public class Buku05 {
         this.stock = stock;
     }
     public void tampilDataBuku(){
-        System.out.println("===========================");
+        System.out.println("======================================================");
         System.out.println("kode buku : "+kodeBuku);
         System.out.println("judul buku : "+judulBuku);
         System.out.println("tahun terbit : "+tahunTerbit);
