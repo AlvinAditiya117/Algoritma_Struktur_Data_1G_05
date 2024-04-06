@@ -32,4 +32,15 @@ public class PencarianBuku05 {
             System.out.println("data : "+ x + " tidak ditemukan ");
         }
     }
+    public void TampilData(int x,int pos){
+        if (pos!=-1) {
+            System.out.println("kode buku \t : "+ x);
+            System.out.println("judul \t\t : "+ listBk[pos].judulBuku);
+            System.out.println("tahun terbit \t: "+ listBk[pos].tahunTerbit);
+            System.out.println("pengarang \t: "+ listBk[pos].pengarang);
+            System.out.println("stock \t\t : "+ listBk[pos].stock);
+        }else{
+            System.out.println("data : "+ x + " tidak ditemukan ");        
+        }
+    }
 }
