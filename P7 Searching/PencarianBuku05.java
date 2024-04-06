@@ -1,8 +1,8 @@
 public class PencarianBuku05 {
-    Buku05 listBk[] = new Buku05[5];
+    Bukuu05 listBk[] = new Bukuu05[5];
     int idx;
 
-    void tambah(Buku05 m){
+    void tambah(Bukuu05 m){
         if (idx < listBk.length) {
             listBk[idx] = m;
             idx++;
@@ -11,7 +11,7 @@ public class PencarianBuku05 {
         }
     }
     void tampil(){
-        for (Buku05 m : listBk) {
+        for (Bukuu05 m : listBk) {
             m.tampilDataBuku();
         }
     }
