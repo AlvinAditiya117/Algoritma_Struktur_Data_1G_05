@@ -36,11 +36,33 @@ public class PencarianBuku05 {
         if (pos!=-1) {
             System.out.println("kode buku \t : "+ x);
             System.out.println("judul \t\t : "+ listBk[pos].judulBuku);
-            System.out.println("tahun terbit \t: "+ listBk[pos].tahunTerbit);
-            System.out.println("pengarang \t: "+ listBk[pos].pengarang);
+            System.out.println("tahun terbit \t : "+ listBk[pos].tahunTerbit);
+            System.out.println("pengarang \t : "+ listBk[pos].pengarang);
             System.out.println("stock \t\t : "+ listBk[pos].stock);
         }else{
             System.out.println("data : "+ x + " tidak ditemukan ");        
         }
+    }
+    public Bukuu05 FindBuku(int cari){
+        for (int j = 0; j < listBk.length; j++) {
+            if (listBk[j].kodeBuku == cari) {
+                return listBk[j];
+            }
+        }
+        return null;
+    }
+    public int FindBinarySearch(int cari, int left,int right){
+        int mid;
+        if (right >= left) {
+            mid = (right + left)/2;
+            if (cari == listBk[mid].kodeBuku) {
+                return(mid);
+            }else if (listBk[mid].kodeBuku > cari) {
+                return FindBinarySearch(cari, left, mid );
+            }else{
+                return FindBinarySearch(cari, mid , right);
+            }
+        }
+        return -1;
     }
 }
