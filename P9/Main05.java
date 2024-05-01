@@ -5,7 +5,8 @@ public class Main05 {
         Gudang05 gudang = new Gudang05(7);
         Scanner sc05 = new Scanner(System.in);
 
-        while (true) {
+        boolean ulangi1 = true;
+        while (ulangi1) {
             System.out.println("<===( menu )===>");
             System.out.println("1.tambah barang");
             System.out.println("2.ambil barang");
@@ -33,6 +34,7 @@ public class Main05 {
                     gudang.tampilkanBarang();
                     break;
                 case 4:
+                    ulangi1 = false;
                     break;
                 default:
                     System.out.println("pilihan tidak valid. silakan coba lagi");
