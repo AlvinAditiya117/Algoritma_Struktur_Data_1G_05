@@ -2,8 +2,11 @@ import java.util.Scanner;
 
 public class Main05 {
     public static void main(String[] args) {
-        Gudang05 gudang = new Gudang05(7);
         Scanner sc05 = new Scanner(System.in);
+
+        System.out.print("masukkan kapasitas gudang : ");
+        int g = sc05.nextInt();
+        Gudang05 gudang = new Gudang05(g);
 
         boolean ulangi1 = true;
         while (ulangi1) {
@@ -11,7 +14,8 @@ public class Main05 {
             System.out.println("1.tambah barang");
             System.out.println("2.ambil barang");
             System.out.println("3.tampilkan tumpukan");
-            System.out.println("4.keluar");
+            System.out.println("4.tampilkan barang teratas");
+            System.out.println("5.keluar");
             System.out.print("pilih operasi >--> ");
             int pilihan = sc05.nextInt();
             sc05.nextLine();
@@ -34,6 +38,8 @@ public class Main05 {
                     gudang.tampilkanBarang();
                     break;
                 case 4:
+                    gudang.lihatBarangTeratas();
+                case 5:
                     ulangi1 = false;
                     break;
                 default:

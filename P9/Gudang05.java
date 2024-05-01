@@ -46,7 +46,7 @@ public class Gudang05 {
         if (top== size-1) {
             Barang05 barangTeratas = tumpukan[top];
             top--;
-            System.out.println("barang "+barangTeratas.nama+" diambil dari gudang");
+            System.out.println("barang teratas "+barangTeratas.nama);
             return barangTeratas;
         }else{
             System.out.println("tumpukan barang kosong");
