@@ -53,6 +53,8 @@ public class DoubleLinkList005 {
                 head = newNode005;
             }else{
                 Node005 newNode005 = new Node005(current.prev, item, current);
+                newNode005.prev = current.prev;
+                newNode005.next = current;
                 current.prev.next = newNode005;
                 current.prev = newNode005;
             }
@@ -76,6 +78,57 @@ public class DoubleLinkList005 {
             System.out.println("\nberhasil diisi");
         }else{
             System.out.println("linked lists kosong");
+        }
+    }
+    public void removeFirst() throws Exception {
+        if (isEmpty()) {
+            throw new Exception ("linked list masih kosong, tidak dapat dihapus!!");
+        }else if (size == 1) {
+            removeLast();
+        }else{
+        head = head.next;
+        head.prev = null;
+        size--;
+        }
+    }
+    public void removeLast() throws Exception {
+        if (isEmpty()) {
+            throw new Exception ("linked list masih kosong, tidak dapat dihapus!!");
+        }else if (head.next == null) {
+            head = null;
+            size--;
+            return;
+        }
+        Node005 current = head;
+        while (current.next.next != null) {
+            current  = current.next;
+        }
+        current.next = null;
+        size--;
+    }
+    public void remove(int index) throws Exception {
+        if (isEmpty() || index >= size) {
+            throw new Exception ("nilai indeks diluar batas");
+        }else if (index == 0) {
+            removeFirst();
+        }else{
+            Node005 current = head;
+            int i = 0;
+            while (i < index) {
+                current = current.next;
+                i++;
+            }
+            if (current.next == null) {
+                current.prev.next = null;
+            }else if (current.prev == null) {
+                current.prev = current.next;
+                current.prev = null;
+                head = current;
+            }else{
+                current.prev.next = current.next;
+                current.next.prev = current.prev;
+            }
+            size--;
         }
     }
 }
